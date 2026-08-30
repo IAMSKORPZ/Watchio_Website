@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Watchio is a modern IPTV player in development for Android TV, Fire TV, Android, and Windows.">
+  <meta name="description" content="Watchio is a modern IPTV player in active development for Android, Android TV and Fire TV, with Live TV, Movies, Series, EPG, search and more.">
   <meta name="theme-color" content="#070714">
   <meta property="og:title" content="Watchio IPTV">
-  <meta property="og:description" content="A polished, cross-platform IPTV player for big screens, phones, tablets, and Windows.">
+  <meta property="og:description" content="A modern, remote-friendly IPTV player built around Live TV, Movies, Series, EPG and your own provider.">
   <meta property="og:type" content="website">
   <title>Watchio IPTV</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,19 +16,23 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header" data-header>
     <nav class="nav" aria-label="Main navigation">
       <a class="brand" href="#top" aria-label="Watchio home">
         <span class="brand-mark">W</span>
         <span>Watchio</span>
       </a>
+
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle>
         <span></span><span></span><span></span>
         <span class="sr-only">Menu</span>
       </button>
+
       <div class="nav-links" id="nav-menu" data-nav-menu>
         <a href="#features">Features</a>
         <a href="#platforms">Platforms</a>
+        <a href="#screenshots">Screenshots</a>
         <a href="#compatibility">Compatibility</a>
         <a href="#downloads">Downloads</a>
         <a href="#faq">FAQ</a>
@@ -41,24 +45,27 @@
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">IPTV player in development</p>
+          <p class="eyebrow">Native Android IPTV player • In development</p>
           <h1 id="hero-title">Watchio IPTV</h1>
-          <p class="hero-lede">A dark, fast, neon-styled IPTV experience built for living room screens, Android devices, and Windows desktops.</p>
+          <p class="hero-lede">Live TV, Movies, Series and TV Guide in one fast, modern interface designed for touch, keyboard and TV remote control.</p>
+
           <div class="hero-actions">
-            <a class="button primary" href="#downloads">Download status</a>
-            <a class="button secondary" href="#features">Explore features</a>
+            <a class="button primary" href="#downloads">Development status</a>
+            <a class="button secondary" href="#features">Explore Watchio</a>
           </div>
+
           <div class="hero-meta" aria-label="Project highlights">
             <span>Android TV</span>
             <span>Fire TV</span>
             <span>Android</span>
-            <span>Windows</span>
+            <span>Media3 Playback</span>
           </div>
         </div>
+
         <div class="hero-device" aria-label="Watchio app home screen preview">
           <figure class="hero-shot">
             <img src="assets/screenshots/dev-log-3-home.png" alt="Watchio home screen showing Live TV, Movies, Series, TV Guide, and Settings tiles">
-            <figcaption>Dev Log 3 first take</figcaption>
+            <figcaption>Current development UI</figcaption>
           </figure>
         </div>
       </div>
@@ -66,84 +73,93 @@
 
     <section class="section" id="features">
       <div class="section-head">
-        <p class="eyebrow">Core experience</p>
-        <h2>Built for clean IPTV viewing</h2>
-        <p>Public site only. No private app source, keys, provider data, or internal implementation details are included here.</p>
+        <p class="eyebrow">Current features</p>
+        <h2>More than just a channel list</h2>
+        <p>Watchio is being rebuilt as a native Android app while keeping the IPTV experience focused, fast and easy to use from the sofa or on a touchscreen.</p>
       </div>
+
       <div class="feature-grid">
-        <article class="feature-card"><span class="icon">TV</span><h3>Big-screen first</h3><p>Designed for TV remotes, clear focus states, and readable viewing from across the room.</p></article>
-        <article class="feature-card"><span class="icon">EPG</span><h3>Guide friendly</h3><p>Prepared for electronic program guide workflows with calm, scan-friendly layouts.</p></article>
-        <article class="feature-card"><span class="icon">UX</span><h3>Modern interface</h3><p>Near-black panels, neon accents, and high-contrast controls for fast navigation.</p></article>
-        <article class="feature-card"><span class="icon">OS</span><h3>Cross-device plan</h3><p>Targeting Android TV, Fire TV, Android phones/tablets, and Windows desktop.</p></article>
+        <article class="feature-card"><span class="icon">TV</span><h3>Live TV</h3><p>Browse categories and channels, see current programme information, start playback in preview and move into fullscreen viewing.</p></article>
+        <article class="feature-card"><span class="icon">EPG</span><h3>TV Guide</h3><p>Electronic programme guide support brings Now & Next information and guide data into the Live TV experience.</p></article>
+        <article class="feature-card"><span class="icon">VOD</span><h3>Movies</h3><p>Poster-first movie browsing with categories, details, metadata, favourites, history, resume playback and trailer support.</p></article>
+        <article class="feature-card"><span class="icon">S</span><h3>Series</h3><p>Browse TV series, open details, select seasons and episodes, then continue straight into playback.</p></article>
+        <article class="feature-card"><span class="icon">⌕</span><h3>Global Search</h3><p>Search across the active library from one place, with dedicated search behaviour inside Movies and Series.</p></article>
+        <article class="feature-card"><span class="icon">♥</span><h3>Favourites & History</h3><p>Keep favourites close, revisit previously watched content and continue eligible movies from saved progress.</p></article>
+        <article class="feature-card"><span class="icon">UI</span><h3>Remote-friendly UI</h3><p>Focus states, keyboard controls, touch input and TV remote navigation are treated as first-class parts of the interface.</p></article>
+        <article class="feature-card"><span class="icon">◐</span><h3>Appearance</h3><p>Watchio includes appearance controls and custom theme options while keeping the default dark neon identity.</p></article>
       </div>
     </section>
 
     <section class="section band" id="platforms">
       <div class="section-head">
-        <p class="eyebrow">Supported platforms</p>
-        <h2>One Watchio feel across devices</h2>
+        <p class="eyebrow">Platforms</p>
+        <h2>Android first</h2>
+        <p>The current Watchio rewrite is native Android. The same build is being designed to scale from handheld Android devices to living-room hardware.</p>
       </div>
+
       <div class="platform-list">
-        <article><h3>Android TV</h3><p>Remote-first layout for Google TV and Android TV devices.</p></article>
-        <article><h3>Fire TV</h3><p>Planned support for Firestick and Fire TV living room setups.</p></article>
-        <article><h3>Android</h3><p>Phone and tablet layouts for touch-first viewing and account setup.</p></article>
-        <article><h3>Windows</h3><p>Desktop-ready experience for larger monitors and keyboard/mouse use.</p></article>
+        <article><span class="status-pill active">Active development</span><h3>Android TV</h3><p>Remote-first navigation, focus handling and big-screen layouts for Android TV and Google TV devices.</p></article>
+        <article><span class="status-pill active">Active development</span><h3>Amazon Fire TV</h3><p>Fire TV and Firestick are key targets, with performance and remote-control behaviour being tested throughout development.</p></article>
+        <article><span class="status-pill active">Active development</span><h3>Android</h3><p>Phone and tablet layouts with touch input, responsive sizing and the same Watchio content experience.</p></article>
+        <article><span class="status-pill planned">Future target</span><h3>Windows</h3><p>Windows remains a future platform target after the native Android version is stabilised.</p></article>
       </div>
     </section>
 
     <section class="section" id="screenshots">
       <div class="section-head">
-        <p class="eyebrow">Screenshots</p>
-        <h2>Dev Log 3 first take</h2>
-        <p>Early Watchio interface captures from the current development build. Public-safe visuals only.</p>
+        <p class="eyebrow">Development screenshots</p>
+        <h2>Watchio in progress</h2>
+        <p>Current development captures. Layout, artwork and smaller UI details can continue to change before release.</p>
       </div>
+
       <div class="screenshots">
-        <figure class="screen-card wide"><img src="assets/screenshots/dev-log-3-home.png" alt="Watchio home dashboard with neon Live TV, Movies, Series, TV Guide, and Settings tiles"><figcaption>Home dashboard</figcaption></figure>
-        <figure class="screen-card wide"><img src="assets/screenshots/dev-log-3-live-tv.png" alt="Watchio Live TV screen with channel list, player preview, and current programme panel"><figcaption>Live TV</figcaption></figure>
-        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-movies.png" alt="Watchio Movies browse screen with poster grid and category sidebar"><figcaption>Movies library</figcaption></figure>
-        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-movie-detail.png" alt="Watchio movie detail screen with poster, backdrop, play button, favourite button, cast, and plot"><figcaption>Movie details</figcaption></figure>
-        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-series.png" alt="Watchio Series browse screen with poster grid and category sidebar"><figcaption>Series library</figcaption></figure>
-        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-series-detail.png" alt="Watchio series detail screen with poster, backdrop, play, trailer, favourite, and metadata"><figcaption>Series details</figcaption></figure>
-        <figure class="screen-card wide"><img src="assets/screenshots/dev-log-3-episodes.png" alt="Watchio series episodes screen showing season selector and episode row"><figcaption>Episodes view</figcaption></figure>
+        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-home.png" alt="Watchio home dashboard"><figcaption>Home dashboard</figcaption></figure>
+        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-live-tv.png" alt="Watchio Live TV screen with channel list, player preview and programme panel"><figcaption>Live TV</figcaption></figure>
+        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-movies.png" alt="Watchio Movies browser"><figcaption>Movies library</figcaption></figure>
+        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-movie-detail.png" alt="Watchio movie details screen"><figcaption>Movie details</figcaption></figure>
+        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-series.png" alt="Watchio Series browser"><figcaption>Series library</figcaption></figure>
+        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-series-detail.png" alt="Watchio series details screen"><figcaption>Series details</figcaption></figure>
+        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-episodes.png" alt="Watchio episode browser and season selector"><figcaption>Episodes & seasons</figcaption></figure>
       </div>
     </section>
 
     <section class="section split" id="compatibility">
       <div>
-        <p class="eyebrow">IPTV compatibility</p>
-        <h2>Bring your own legal playlist</h2>
-        <p>Watchio is intended as a player interface. It does not provide TV channels, subscriptions, streams, or copyrighted content.</p>
+        <p class="eyebrow">Provider compatibility</p>
+        <h2>Your provider. Your content.</h2>
+        <p>Watchio is an IPTV player only. It does not provide channels, movies, series, subscriptions or copyrighted streams. You connect your own lawful IPTV source.</p>
       </div>
+
       <div class="compat-cards">
-        <article><h3>Xtream Codes</h3><p>Planned account-style playlist support for compatible providers.</p></article>
-        <article><h3>M3U</h3><p>Playlist URL/file workflows planned for public release builds.</p></article>
-        <article><h3>XMLTV / EPG</h3><p>Program guide metadata support planned where providers supply valid EPG data.</p></article>
+        <article><span class="status-pill active">Implemented</span><h3>Xtream Codes</h3><p>Connect compatible Xtream-style providers and import Live TV, Movies and Series libraries.</p></article>
+        <article><span class="status-pill active">Implemented</span><h3>M3U</h3><p>Watchio supports M3U playlist workflows, including provider metadata used by compatible streams.</p></article>
+        <article><span class="status-pill active">Implemented</span><h3>XMLTV / EPG</h3><p>Programme guide data is integrated into the TV experience where valid EPG information is supplied.</p></article>
       </div>
     </section>
 
     <section class="section band" id="status">
       <div class="section-head">
         <p class="eyebrow">Development status</p>
-        <h2>In active development</h2>
-        <p>Watchio is not publicly released yet. Downloads will appear here only when stable public builds are ready.</p>
+        <h2>The native rebuild is moving quickly</h2>
+        <p>The repository now contains the native Android Watchio application and an automated development-release pipeline. These builds are still pre-release and should not be treated as the finished public version.</p>
       </div>
+
       <ol class="timeline">
-        <li><span>1</span><div><h3>Interface polish</h3><p>Branding, navigation, and device layouts being refined.</p></div></li>
-        <li><span>2</span><div><h3>Platform testing</h3><p>Validation planned across TV, mobile, tablet, and desktop form factors.</p></div></li>
-        <li><span>3</span><div><h3>Public release</h3><p>Downloads and install notes will be added after release approval.</p></div></li>
+        <li><span>✓</span><div><h3>Core IPTV experience</h3><p>Live TV, Movies, Series, search, favourites, history, EPG and provider workflows are already represented in the native app.</p></div></li>
+        <li><span>2</span><div><h3>Polish & optimisation</h3><p>Performance, responsive layouts, TV focus behaviour, playback and interface details are being refined.</p></div></li>
+        <li><span>3</span><div><h3>Public release</h3><p>The website download area will switch on when a build is ready for normal users rather than development testing.</p></div></li>
       </ol>
     </section>
 
     <section class="section download" id="downloads">
       <div class="download-panel">
         <p class="eyebrow">Downloads</p>
-        <h2>Coming soon</h2>
-        <p>Official Watchio downloads are not available yet. This area is reserved for future public builds only.</p>
+        <h2>Public download coming soon</h2>
+        <p>Development APKs are being produced while Watchio is tested, but the public download button will stay locked until the app is ready for wider use.</p>
         <div class="download-buttons" aria-label="Planned download platforms">
-          <button type="button" disabled>Android TV APK</button>
-          <button type="button" disabled>Fire TV APK</button>
+          <button type="button" disabled>Android TV / Fire TV APK</button>
           <button type="button" disabled>Android APK</button>
-          <button type="button" disabled>Windows installer</button>
+          <button type="button" disabled>Windows — later</button>
         </div>
       </div>
     </section>
@@ -153,32 +169,35 @@
         <p class="eyebrow">FAQ</p>
         <h2>Common questions</h2>
       </div>
+
       <div class="faq-list">
-        <details><summary>Does Watchio include TV channels?</summary><p>No. Watchio is a player. Users must use their own legal IPTV playlist or provider credentials.</p></details>
-        <details><summary>Is the app available now?</summary><p>Not yet. Public downloads will be added only when stable builds are ready.</p></details>
-        <details><summary>Is the app source code public?</summary><p>No. This repository contains website files only. The app source remains private and separate.</p></details>
-        <details><summary>Which formats are planned?</summary><p>Xtream Codes, M3U playlists, and XMLTV/EPG metadata are planned compatibility areas.</p></details>
+        <details><summary>Does Watchio include TV channels or movies?</summary><p>No. Watchio is a player. You must connect your own lawful provider or playlist.</p></details>
+        <details><summary>Can I download Watchio now?</summary><p>Not as a normal public release yet. Development builds exist for testing, but Watchio is still being actively developed.</p></details>
+        <details><summary>Does Watchio support Xtream Codes?</summary><p>Yes. Xtream provider workflows are part of the current app.</p></details>
+        <details><summary>Does Watchio support M3U?</summary><p>Yes. M3U playlist support is part of the current app.</p></details>
+        <details><summary>Does Watchio support an EPG?</summary><p>Yes. Watchio supports programme-guide information where compatible EPG data is available from the configured source.</p></details>
+        <details><summary>Can I use a TV remote?</summary><p>Yes. Android TV and Fire TV remote navigation, focus handling and keyboard-style input are key parts of the current interface work.</p></details>
+        <details><summary>Is Windows available?</summary><p>The current rewrite is focused on native Android. Windows is a future target rather than part of the current native build.</p></details>
       </div>
     </section>
 
     <section class="section legal" id="privacy">
       <h2>Privacy</h2>
-      <p>This website is a static public information page. It does not collect IPTV credentials, playlist URLs, payment details, or app account information.</p>
+      <p>This website is a static product and development page. It does not ask for or collect your IPTV username, password, playlist URL or provider credentials.</p>
     </section>
 
     <section class="section legal" id="terms">
       <h2>Terms & disclaimer</h2>
-      <p>Watchio is intended for lawful playback of user-provided content. Watchio does not host, sell, provide, or endorse unauthorized streams, channels, or copyrighted content. Users are responsible for ensuring they have rights to access any content they play.</p>
+      <p>Watchio is intended for lawful playback of user-provided content. Watchio does not host, sell or provide IPTV subscriptions, channels, movies, series or unauthorized copyrighted streams. Users are responsible for ensuring they have permission to access the content they use with the app.</p>
     </section>
   </main>
 
   <footer class="footer">
     <div class="brand"><span class="brand-mark">W</span><span>Watchio</span></div>
-    <p>&copy; <span data-year></span> Watchio. Website repository only. App source private.</p>
+    <p>&copy; <span data-year></span> Watchio. All rights reserved.</p>
     <div class="footer-links">
       <a href="#privacy">Privacy</a>
       <a href="#terms">Terms</a>
-      <a href="https://github.com/IAMSKORPZ/Watchio_Website">GitHub</a>
     </div>
   </footer>
 
