@@ -7,7 +7,7 @@ This repository contains only public website files:
 - `index.html`
 - `styles.css`
 - `script.js`
-- public placeholder content
+- public-safe Dev Log screenshots
 
 The Watchio app source code, internal implementation details, provider data, private keys, builds, and release signing material must stay in a separate private repository.
 
