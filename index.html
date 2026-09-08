@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Watchio is a modern IPTV player in active development for Android, Android TV and Fire TV, with Live TV, Movies, Series, EPG, search and more.">
-  <meta name="theme-color" content="#070714">
+  <meta name="description" content="Watchio is a modern IPTV player for Android, Android TV, Google TV and Fire TV with Live TV, Movies, Series, EPG and provider support.">
+  <meta name="theme-color" content="#060711">
   <meta property="og:title" content="Watchio IPTV">
-  <meta property="og:description" content="A modern, remote-friendly IPTV player built around Live TV, Movies, Series, EPG and your own provider.">
+  <meta property="og:description" content="Live TV, Movies, Series and TV Guide in one modern IPTV player.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/branding/watchio-logo-square.webp">
   <link rel="icon" type="image/webp" href="assets/branding/watchio-logo-square.webp">
@@ -20,209 +20,118 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="i-tv" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="m8 3 4 3 4-3"/></symbol>
+    <symbol id="i-guide" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4m8-4v4M3 10h18M7 14h3m4 0h3M7 18h3"/></symbol>
+    <symbol id="i-movie" viewBox="0 0 24 24"><path d="M4 5h16v14H4zM8 3v4m8-4v4M4 9h16"/><path d="m10 12 5 2.5-5 2.5z"/></symbol>
+    <symbol id="i-series" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 4v16m8-16v16M4 9h4m8 0h4M4 15h4m8 0h4"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 5.7a5.5 5.5 0 0 0-7.8 0L12 6.8l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 22l8.8-8.5a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+    <symbol id="i-remote" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="4"/><circle cx="12" cy="7" r="2"/><path d="M10 13h4m-2-2v4m-2 4h.01m4 0h.01"/></symbol>
+    <symbol id="i-theme" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9c0-1.1-.9-2-2-2h-1.2a2 2 0 0 1-1.6-3.2l.7-.9A1.8 1.8 0 0 0 15.5 3H12Z"/><circle cx="8" cy="10" r=".7"/><circle cx="11" cy="6.5" r=".7"/><circle cx="8" cy="15" r=".7"/></symbol>
+    <symbol id="i-fire" viewBox="0 0 24 24"><path d="M13.5 2.5c.6 4-2.8 5.1-2 8.2.5 1.8 2.3 2.3 3.5 1.1 1.3-1.3.6-3 .4-3.6 2.8 1.8 4.6 4.6 3.7 8-1 3.8-4.2 5.8-7.3 5.8-4 0-7.5-2.6-7.2-7 .2-3.1 2.2-5.5 4.8-7.4-.2 2.3.5 3.5 1.4 3.3 1.5-.4-.7-4.4 2.7-8.4Z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 5h4m-3 14h2"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.5.5l2-2a5 5 0 0 0-7-7l-1.2 1.2M14 11a5 5 0 0 0-7.5-.5l-2 2a5 5 0 0 0 7 7l1.2-1.2"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 9-3 3 3 3m8-6 3 3-3 3m-2-9-4 12"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  </svg>
+
   <header class="site-header" data-header>
     <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="#top" aria-label="Watchio home">
-        <img src="assets/branding/watchio-logo-square.webp" alt="" width="42" height="42" style="display:block;width:42px;height:42px;border-radius:10px;object-fit:cover;box-shadow:0 0 24px rgba(140,77,255,.28)">
-        <span>Watchio</span>
-      </a>
-
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle>
-        <span></span><span></span><span></span>
-        <span class="sr-only">Menu</span>
-      </button>
-
+      <a class="brand" href="#top" aria-label="Watchio home"><img src="assets/branding/watchio-logo-square.webp" alt="" width="42" height="42"><span>Watchio</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
       <div class="nav-links" id="nav-menu" data-nav-menu>
-        <a href="#features">Features</a>
-        <a href="#platforms">Platforms</a>
-        <a href="#screenshots">Screenshots</a>
-        <a href="#compatibility">Compatibility</a>
-        <a href="#downloads">Downloads</a>
-        <a href="#faq">FAQ</a>
+        <a href="#features">Features</a><a href="#compatibility">Supports</a><a href="#devices">Devices</a><a href="#install">Install</a><a href="#screenshots">Screenshots</a><a href="#faq">FAQ</a>
       </div>
     </nav>
   </header>
 
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
       <div class="hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Native Android IPTV player • In development</p>
-          <h1 id="hero-title" class="sr-only">Watchio IPTV</h1>
-          <p class="hero-lede">Live TV, Movies, Series and TV Guide in one fast, modern interface designed for touch, keyboard and TV remote control.</p>
-
-          <div class="hero-actions">
-            <a class="button primary" href="#downloads">Development status</a>
-            <a class="button secondary" href="#features">Explore Watchio</a>
-          </div>
-
-          <div class="hero-meta" aria-label="Project highlights">
-            <span>Android TV</span>
-            <span>Fire TV</span>
-            <span>Android</span>
-            <span>Media3 Playback</span>
-          </div>
+          <p class="eyebrow"><span class="pulse"></span> New IPTV player · Coming soon</p>
+          <h1 id="hero-title">Your TV.<br><span>Your way.</span></h1>
+          <p class="hero-lede">Watch live channels, browse movies and series, check your TV guide, and continue watching across a fast interface built for the big screen and your pocket.</p>
+          <div class="hero-actions"><a class="button primary" href="#install">How to install</a><a class="button secondary" href="#features">See what it does</a></div>
+          <ul class="hero-points" aria-label="Watchio highlights"><li><svg><use href="#i-check"/></svg>Your provider</li><li><svg><use href="#i-check"/></svg>Remote ready</li><li><svg><use href="#i-check"/></svg>No subscription included</li></ul>
         </div>
-
-        <div class="hero-device" aria-label="Watchio app home screen preview">
-          <figure class="hero-shot">
-            <img src="assets/screenshots/dev-log-3-home.png" alt="Watchio home screen showing Live TV, Movies, Series, TV Guide, and Settings tiles">
-            <figcaption>Current development UI</figcaption>
-          </figure>
+        <div class="app-preview">
+          <div class="preview-top"><span class="preview-label">Watchio preview</span><span class="status-dot">In development</span></div>
+          <img src="assets/screenshots/dev-log-3-home.png" alt="Watchio home screen with Live TV, Movies, Series and TV Guide">
         </div>
       </div>
     </section>
 
     <section class="section" id="features">
-      <div class="section-head">
-        <p class="eyebrow">Current features</p>
-        <h2>More than just a channel list</h2>
-        <p>Watchio is being rebuilt as a native Android app while keeping the IPTV experience focused, fast and easy to use from the sofa or on a touchscreen.</p>
-      </div>
-
+      <div class="section-head centered"><p class="eyebrow">Everything in one place</p><h2>What Watchio does</h2><p>Core IPTV tools without clutter, designed around quick navigation and reliable playback.</p></div>
       <div class="feature-grid">
-        <article class="feature-card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="m8 3 4 3 4-3"/></svg></span><h3>Live TV</h3><p>Browse categories and channels, see current programme information, start playback in preview and move into fullscreen viewing.</p></article>
-        <article class="feature-card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M7 14h3M14 14h3M7 18h3"/></svg></span><h3>TV Guide</h3><p>Electronic programme guide support brings Now & Next information and guide data into the Live TV experience.</p></article>
-        <article class="feature-card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM8 3v4M16 3v4M4 9h16"/><path d="m10 12 5 2.5-5 2.5z"/></svg></span><h3>Movies</h3><p>Poster-first movie browsing with categories, details, metadata, favourites, history, resume playback and trailer support.</p></article>
-        <article class="feature-card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 4v16M16 4v16M4 9h4M16 9h4M4 15h4M16 15h4"/></svg></span><h3>Series</h3><p>Browse TV series, open details, select seasons and episodes, then continue straight into playback.</p></article>
-        <article class="feature-card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg></span><h3>Global Search</h3><p>Search across the active library from one place, with dedicated search behaviour inside Movies and Series.</p></article>
-        <article class="feature-card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.8 5.7a5.5 5.5 0 0 0-7.8 0L12 6.8l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 22l8.8-8.5a5.5 5.5 0 0 0 0-7.8Z"/><path d="M17 9v4l2 1"/></svg></span><h3>Favourites & History</h3><p>Keep favourites close, revisit previously watched content and continue eligible movies from saved progress.</p></article>
-        <article class="feature-card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M8 12h8M12 8v8M18 9h.01M18 15h.01"/></svg></span><h3>Remote-friendly UI</h3><p>Focus states, keyboard controls, touch input and TV remote navigation are treated as first-class parts of the interface.</p></article>
-        <article class="feature-card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9c0-1.1-.9-2-2-2h-1.2a2 2 0 0 1-1.6-3.2l.7-.9A1.8 1.8 0 0 0 15.5 3H12Z"/><circle cx="7.5" cy="11" r=".7"/><circle cx="10" cy="7" r=".7"/><circle cx="7.5" cy="15" r=".7"/></svg></span><h3>Appearance</h3><p>Watchio includes appearance controls and custom theme options while keeping the default dark neon identity.</p></article>
+        <article class="feature-card"><span class="icon"><svg><use href="#i-tv"/></svg></span><h3>Live TV</h3><p>Browse channel categories, see current programmes, preview streams, and switch into fullscreen playback.</p></article>
+        <article class="feature-card"><span class="icon"><svg><use href="#i-guide"/></svg></span><h3>TV Guide</h3><p>View Now &amp; Next information and available programme-guide data from your provider.</p></article>
+        <article class="feature-card"><span class="icon"><svg><use href="#i-movie"/></svg></span><h3>Movies</h3><p>Explore poster-led libraries, details, metadata, trailers, favourites, and resume playback.</p></article>
+        <article class="feature-card"><span class="icon"><svg><use href="#i-series"/></svg></span><h3>Series</h3><p>Browse shows, choose seasons and episodes, and continue straight into playback.</p></article>
+        <article class="feature-card"><span class="icon"><svg><use href="#i-search"/></svg></span><h3>Fast Search</h3><p>Find channels, films, series, and episodes across your active library.</p></article>
+        <article class="feature-card"><span class="icon"><svg><use href="#i-heart"/></svg></span><h3>Favourites &amp; History</h3><p>Keep favourites close and return to previously watched content and saved progress.</p></article>
+        <article class="feature-card"><span class="icon"><svg><use href="#i-remote"/></svg></span><h3>Remote Friendly</h3><p>Clear focus states and smooth navigation for remotes, keyboards, touch, and mouse.</p></article>
+        <article class="feature-card"><span class="icon"><svg><use href="#i-theme"/></svg></span><h3>Your Appearance</h3><p>Choose appearance options while keeping Watchio’s signature dark neon experience.</p></article>
       </div>
     </section>
 
-    <section class="section band" id="platforms">
-      <div class="section-head">
-        <p class="eyebrow">Platforms</p>
-        <h2>Android first</h2>
-        <p>The current Watchio rewrite is native Android. The same build is being designed to scale from handheld Android devices to living-room hardware.</p>
+    <section class="section panel-section" id="compatibility">
+      <div class="split-head"><div><p class="eyebrow">Bring your own provider</p><h2>What it supports</h2></div><p>Watchio is a player only. Connect your own lawful IPTV source; Watchio does not supply channels, subscriptions, movies, or streams.</p></div>
+      <div class="support-grid">
+        <article><span class="icon compact"><svg><use href="#i-link"/></svg></span><div><span class="tag">Supported</span><h3>Xtream Codes</h3><p>Connect compatible Xtream-style providers and import Live TV, Movies, and Series.</p></div></article>
+        <article><span class="icon compact"><svg><use href="#i-code"/></svg></span><div><span class="tag">Supported</span><h3>M3U playlists</h3><p>Load compatible M3U playlists and available stream metadata.</p></div></article>
+        <article><span class="icon compact"><svg><use href="#i-guide"/></svg></span><div><span class="tag">Supported</span><h3>XMLTV / EPG</h3><p>Use compatible programme-guide data throughout the TV experience.</p></div></article>
       </div>
+    </section>
 
-      <div class="platform-list">
-        <article><span class="status-pill active">Active development</span><h3>Android TV</h3><p>Remote-first navigation, focus handling and big-screen layouts for Android TV and Google TV devices.</p></article>
-        <article><span class="status-pill active">Active development</span><h3>Amazon Fire TV</h3><p>Fire TV and Firestick are key targets, with performance and remote-control behaviour being tested throughout development.</p></article>
-        <article><span class="status-pill active">Active development</span><h3>Android</h3><p>Phone and tablet layouts with touch input, responsive sizing and the same Watchio content experience.</p></article>
-        <article><span class="status-pill planned">Future target</span><h3>Windows</h3><p>Windows remains a future platform target after the native Android version is stabilised.</p></article>
+    <section class="section" id="devices">
+      <div class="section-head centered"><p class="eyebrow">Watch where you want</p><h2>Supported devices</h2><p>One Android-first experience shaped for televisions, streaming devices, phones, and tablets.</p></div>
+      <div class="device-grid">
+        <article><span class="device-icon"><svg><use href="#i-fire"/></svg></span><h3>Firestick</h3><p>Amazon Fire TV devices with remote-first navigation.</p><span class="availability active">Active development</span></article>
+        <article class="featured"><span class="device-icon"><svg><use href="#i-tv"/></svg></span><h3>Android TV &amp; Google TV</h3><p>Big-screen layouts with clear focus and remote controls.</p><span class="availability active">Active development</span></article>
+        <article><span class="device-icon"><svg><use href="#i-phone"/></svg></span><h3>Android</h3><p>Responsive touch layouts for Android phones and tablets.</p><span class="availability active">Active development</span></article>
+      </div>
+      <p class="future-note">Windows remains a future platform target.</p>
+    </section>
+
+    <section class="section install-section" id="install">
+      <div class="section-head centered"><p class="eyebrow">Ready when launch arrives</p><h2>Choose how to install</h2><p>Official links and Downloader codes will appear here when public builds are ready. No codes or APKs are available yet.</p></div>
+      <div class="install-grid">
+        <article class="install-card"><span class="step">01</span><span class="device-icon"><svg><use href="#i-fire"/></svg></span><h3>Firestick</h3><p>Open Downloader on your Firestick, enter Watchio’s code, then follow the on-screen installation steps.</p><button type="button" disabled>Downloader link · Coming soon</button><div class="code-box"><span>Downloader code</span><strong>Coming soon</strong></div></article>
+        <article class="install-card featured"><span class="step">02</span><span class="device-icon"><svg><use href="#i-tv"/></svg></span><h3>TV</h3><p>Android TV and Google TV installation will be available after device testing is complete.</p><button type="button" disabled>Coming soon</button></article>
+        <article class="install-card"><span class="step">03</span><span class="device-icon"><svg><use href="#i-phone"/></svg></span><h3>Android</h3><p>Download the APK directly or use Watchio’s code through the Downloader app.</p><button type="button" disabled>Direct APK · Coming soon</button><div class="code-box"><span>Downloader code</span><strong>Coming soon</strong></div></article>
       </div>
     </section>
 
     <section class="section" id="screenshots">
-      <div class="section-head">
-        <p class="eyebrow">Development screenshots</p>
-        <h2>Watchio in progress</h2>
-        <p>Current development captures. Layout, artwork and smaller UI details can continue to change before release.</p>
-      </div>
-
+      <div class="split-head"><div><p class="eyebrow">Inside Watchio</p><h2>Built for quick viewing</h2></div><p>Current development captures. Artwork and smaller interface details may change before release.</p></div>
       <div class="screenshots">
-        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-home.png" alt="Watchio home dashboard"><figcaption>Home dashboard</figcaption></figure>
-        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-live-tv.png" alt="Watchio Live TV screen with channel list, player preview and programme panel"><figcaption>Live TV</figcaption></figure>
-        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-movies.png" alt="Watchio Movies browser"><figcaption>Movies library</figcaption></figure>
-        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-movie-detail.png" alt="Watchio movie details screen"><figcaption>Movie details</figcaption></figure>
-        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-series.png" alt="Watchio Series browser"><figcaption>Series library</figcaption></figure>
-        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-series-detail.png" alt="Watchio series details screen"><figcaption>Series details</figcaption></figure>
-        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-episodes.png" alt="Watchio episode browser and season selector"><figcaption>Episodes & seasons</figcaption></figure>
+        <figure class="screen-card wide"><img src="assets/screenshots/dev-log-3-live-tv.png" alt="Watchio Live TV screen"><figcaption>Live TV</figcaption></figure>
+        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-movies.png" alt="Watchio Movies browser"><figcaption>Movies</figcaption></figure>
+        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-series.png" alt="Watchio Series browser"><figcaption>Series</figcaption></figure>
+        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-episodes.png" alt="Watchio episode browser"><figcaption>Episodes &amp; seasons</figcaption></figure>
+        <figure class="screen-card"><img src="assets/screenshots/dev-log-3-movie-detail.png" alt="Watchio movie details"><figcaption>Movie details</figcaption></figure>
       </div>
     </section>
 
-    <section class="section compatibility-section" id="compatibility">
-      <div class="section-head">
-        <p class="eyebrow">Provider compatibility</p>
-        <h2>Your provider. Your content.</h2>
-        <p>Watchio is an IPTV player only. It does not provide channels, movies, series, subscriptions or copyrighted streams. You connect your own lawful IPTV source.</p>
-      </div>
-
-      <div class="compat-cards">
-        <article><span class="status-pill active">Implemented</span><h3>Xtream Codes</h3><p>Connect compatible Xtream-style providers and import Live TV, Movies and Series libraries.</p></article>
-        <article><span class="status-pill active">Implemented</span><h3>M3U</h3><p>Watchio supports M3U playlist workflows, including provider metadata used by compatible streams.</p></article>
-        <article><span class="status-pill active">Implemented</span><h3>XMLTV / EPG</h3><p>Programme guide data is integrated into the TV experience where valid EPG information is supplied.</p></article>
-      </div>
-    </section>
-
-    <section class="section band" id="status">
-      <div class="section-head">
-        <p class="eyebrow">Development status</p>
-        <h2>The native rebuild is moving quickly</h2>
-        <p>The repository now contains the native Android Watchio application and an automated development-release pipeline. These builds are still pre-release and should not be treated as the finished public version.</p>
-      </div>
-
-      <ol class="timeline">
-        <li><span>✓</span><div><h3>Core IPTV experience</h3><p>Live TV, Movies, Series, search, favourites, history, EPG and provider workflows are already represented in the native app.</p></div></li>
-        <li><span>2</span><div><h3>Polish & optimisation</h3><p>Performance, responsive layouts, TV focus behaviour, playback and interface details are being refined.</p></div></li>
-        <li><span>3</span><div><h3>Public release</h3><p>The website download area will switch on when a build is ready for normal users rather than development testing.</p></div></li>
-      </ol>
-    </section>
-
-    <section class="section download" id="downloads">
-      <div class="download-panel">
-        <img src="assets/branding/watchio-logo-square.webp" alt="Watchio IPTV logo" width="110" height="110" style="display:block;width:110px;height:110px;object-fit:cover;border-radius:24px;margin:0 auto 1.25rem;box-shadow:0 0 40px rgba(140,77,255,.26)">
-        <p class="eyebrow">Downloads</p>
-        <h2>Public download coming soon</h2>
-        <p>Development APKs are being produced while Watchio is tested, but the public download button will stay locked until the app is ready for wider use.</p>
-        <div class="download-options" aria-label="Download and installation options">
-          <article class="download-card">
-            <h3>Firestick</h3>
-            <p>Install through the Downloader app using your Firestick code.</p>
-            <div class="download-methods">
-              <button type="button" disabled>Downloader App — Coming Soon</button>
-              <div class="download-method">
-                <span>Downloader code</span>
-                <strong>Coming Soon</strong>
-              </div>
-            </div>
-          </article>
-          <article class="download-card">
-            <h3>TV</h3>
-            <p>For Android TV and Google TV compatible devices.</p>
-            <button type="button" disabled>Coming Soon</button>
-          </article>
-          <article class="download-card">
-            <h3>Android</h3>
-            <p>Install directly or through the Downloader app.</p>
-            <div class="download-methods">
-              <button type="button" disabled>Direct APK — Coming Soon</button>
-              <div class="download-method">
-                <span>Downloader code</span>
-                <strong>Coming Soon</strong>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="faq">
-      <div class="section-head">
-        <p class="eyebrow">FAQ</p>
-        <h2>Common questions</h2>
-      </div>
-
+    <section class="section faq-section" id="faq">
+      <div class="section-head centered"><p class="eyebrow">Need to know</p><h2>Frequently asked questions</h2></div>
       <div class="faq-list">
-        <details><summary>Does Watchio include TV channels or movies?</summary><p>No. Watchio is a player. You must connect your own lawful provider or playlist.</p></details>
-        <details><summary>Can I download Watchio now?</summary><p>Not as a normal public release yet. Development builds exist for testing, but Watchio is still being actively developed.</p></details>
-        <details><summary>Does Watchio support Xtream Codes?</summary><p>Yes. Xtream provider workflows are part of the current app.</p></details>
-        <details><summary>Does Watchio support M3U?</summary><p>Yes. M3U playlist support is part of the current app.</p></details>
-        <details><summary>Does Watchio support an EPG?</summary><p>Yes. Watchio supports programme-guide information where compatible EPG data is available from the configured source.</p></details>
-        <details><summary>Can I use a TV remote?</summary><p>Yes. Android TV and Fire TV remote navigation, focus handling and keyboard-style input are key parts of the current interface work.</p></details>
-        <details><summary>Is Windows available?</summary><p>The current rewrite is focused on native Android. Windows is a future target rather than part of the current native build.</p></details>
+        <details><summary>Does Watchio include channels, movies, or subscriptions?</summary><p>No. Watchio is a player. You connect your own lawful provider or playlist.</p></details>
+        <details><summary>Can I install Watchio now?</summary><p>Not yet. Public APK links and Downloader codes will appear here when release builds are ready.</p></details>
+        <details><summary>Which providers work with Watchio?</summary><p>Watchio supports compatible Xtream Codes and M3U providers, plus XMLTV / EPG data where available.</p></details>
+        <details><summary>Can I control it with a TV remote?</summary><p>Yes. Android TV and Fire TV remote navigation and focus handling are core parts of the app.</p></details>
+        <details><summary>Will Watchio support Windows?</summary><p>Windows remains a future target. Current development focuses on Android, Android TV, Google TV, and Fire TV.</p></details>
       </div>
     </section>
 
-    <section class="section legal" id="terms">
-      <h2>Terms & disclaimer</h2>
-      <p>Watchio is intended for lawful playback of user-provided content. Watchio does not host, sell or provide IPTV subscriptions, channels, movies, series or unauthorized copyrighted streams. Users are responsible for ensuring they have permission to access the content they use with the app.</p>
-    </section>
+    <section class="section legal" id="terms"><h2>Player only. Your content.</h2><p>Watchio is intended for lawful playback of user-provided content. Watchio does not host, sell, or provide IPTV subscriptions, channels, movies, series, or unauthorized copyrighted streams.</p></section>
   </main>
 
-  <footer class="footer">
-    <div class="brand"><img src="assets/branding/watchio-logo-square.webp" alt="" width="38" height="38" style="display:block;width:38px;height:38px;border-radius:9px;object-fit:cover"><span>Watchio</span></div>
-    <p>&copy; <span data-year></span> Watchio. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="#terms">Terms</a>
-    </div>
-  </footer>
-
+  <footer class="footer"><a class="brand" href="#top" aria-label="Watchio home"><img src="assets/branding/watchio-logo-square.webp" alt="" width="38" height="38"><span>Watchio</span></a><p>&copy; <span data-year></span> Watchio. All rights reserved.</p><a href="#terms">Terms</a></footer>
   <script src="script.js"></script>
 </body>
 </html>
