@@ -11,7 +11,7 @@
       "id": "backup",
       "url": "http://xololive.watch:8880",
       "priority": 1,
-      "enabled": false
+      "enabled": true
     }
   ]
 }
