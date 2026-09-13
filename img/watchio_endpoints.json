@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "endpoints": [
+    {
+      "id": "primary",
+      "url": "http://xololive.watch:8880",
+      "priority": 0,
+      "enabled": true
+    },
+    {
+      "id": "backup",
+      "url": "http://mediatitans.live:8880",
+      "priority": 1,
+      "enabled": true
+    }
+  ]
+}
