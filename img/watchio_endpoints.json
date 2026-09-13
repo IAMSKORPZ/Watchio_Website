@@ -2,14 +2,20 @@
   "version": 1,
   "endpoints": [
     {
-      "id": "primary",
-      "url": "http://mediatitans.live:8880",
+      "id": "Primary",
+      "url": "http://xololive.watch:8880",
       "priority": 0,
       "enabled": false
     },
     {
-      "id": "backup",
-      "url": "http://xololive.watch:8880",
+      "id": "Backup 1",
+      "url": "http://mediatitans.live:8880",
+      "priority": 1,
+      "enabled": true
+    },
+    {
+      "id": "Backup 2",
+      "url": "http://aw999.uk:8880",
       "priority": 1,
       "enabled": true
     }
