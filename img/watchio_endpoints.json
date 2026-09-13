@@ -5,7 +5,7 @@
       "id": "primary",
       "url": "http://mediatitans.live:8880",
       "priority": 0,
-      "enabled": true
+      "enabled": false
     },
     {
       "id": "backup",
