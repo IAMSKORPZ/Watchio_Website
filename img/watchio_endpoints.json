@@ -5,7 +5,7 @@
       "id": "Xolo",
       "url": "http://xololive.watch:8880",
       "priority": 0,
-      "enabled": true
+      "enabled": false
     },
     {
       "id": "MediaTitans",
