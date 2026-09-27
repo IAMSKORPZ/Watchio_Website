@@ -1,13 +1,6 @@
 <?php
 declare(strict_types=1);
 
-/*
- * XOLO LIVE SmartAds DNS endpoint replacement.
- *
- * Deploy beside providers.php at:
- * https://no1apps.xyz/pnl5/cu5t/x0l0/smartads/api/dns.php
- */
-
 header('Content-Type: application/json; charset=utf-8');
 header('Cache-Control: no-store');
 
