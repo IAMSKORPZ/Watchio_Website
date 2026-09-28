@@ -20,6 +20,16 @@
       "priority": "NORMAL",
       "dismissible": true,
       "action": null
+    },
+    {
+      "id": "watchio-live-tv-v0-1-5-2026-09-28",
+      "title": "Live TV Update 📺",
+      "body": "A new Watchio update is now available! Live TV has been improved with NOW, NEXT and LATER programme information, making it easier to see what's currently playing and what's coming up without opening the full TV Guide. We've also improved programme matching, performance and the Live TV layout. Update Watchio to the latest version to get the new features.",
+      "publishedAt": "2026-09-28T00:10:48Z",
+      "type": "FEATURE",
+      "priority": "NORMAL",
+      "dismissible": true,
+      "action": null
     }
   ]
 }
