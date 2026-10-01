@@ -11,7 +11,7 @@
       "id": "MediaTitans",
       "url": "http://mediatitans.live:8880",
       "priority": 1,
-      "enabled": false
+      "enabled": true
     },
     {
       "id": "AW999",
