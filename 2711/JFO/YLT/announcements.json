@@ -30,6 +30,16 @@
       "priority": "NORMAL",
       "dismissible": true,
       "action": null
+    },
+    {
+      "id": "watchio-v0-1-7-major-update-2026-10-11",
+      "title": "Watchio v0.1.7 - Major Update Available!",
+      "body": "🚀 WATCHIO v0.1.7 - MAJOR UPDATE AVAILABLE!\n\nA brand-new Watchio update is here! We've been working on improving the app, adding new features and fixing issues reported by users.\n\nHere's what's new!\n\n🔎 COMPLETELY UPGRADED SEARCH\n\n- Improved Live TV, Movies and TV Shows search.\n- Upgraded Global Search across all three sections.\n- More accurate and relevant search results.\n- Search your entire catalogue without switching categories.\n- Improved navigation and responsiveness.\n- Better background catalogue loading.\n\n⚽ SPORTS SECTION IMPROVEMENTS\n\n- Upgraded football fixtures and match information.\n- Improved football data integration.\n- Better matching between fixtures and available channels.\n- Improved match discovery and navigation.\n- Match reminder support.\n\n🔔 NEW ANNOUNCEMENTS SYSTEM\n\n- Redesigned announcements inbox.\n- Archive announcements instead of losing them.\n- Reopen archived announcements whenever you want.\n- Improved notification handling and navigation.\n\n📺 TV & FIRESTICK LOGIN FIXES\n\n- Fixed the on-screen keyboard becoming stuck during login.\n- Fixed Back button behaviour when closing the keyboard.\n- Improved remote-control navigation.\n- Better focus between login fields and buttons.\n- Improved Xtream, DNS and M3U login keyboard handling.\n- Improved Login button selection.\n\nThese fixes have been successfully tested on TV and Firestick.\n\n🛠️ ADDITIONAL IMPROVEMENTS\n\n- Improved search performance and catalogue handling.\n- Smoother navigation throughout the app.\n- Additional stability and usability improvements.\n\n📥 PLEASE UPDATE YOUR APP\n\nWatchio v0.1.7 is now available!\n\nOpen Watchio and use Check for Updates to download and install the latest version.\n\nWe recommend updating to receive all the latest fixes and improvements.\n\nThank you for your continued support! ❤️\n\n- Watchio",
+      "publishedAt": "2026-10-11T20:10:36Z",
+      "type": "FEATURE",
+      "priority": "NORMAL",
+      "dismissible": true,
+      "action": null
     }
   ]
 }
